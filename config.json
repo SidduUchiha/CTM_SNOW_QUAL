@@ -1,0 +1,32 @@
+{
+  "ServiceNow": {
+    "Instance": "https://bciprod.service-now.com",
+    "User": "YOUR_SNOW_USERNAME",
+    "Password": "YOUR_SNOW_PASSWORD",
+    "Table": "/api/now/table/incident",
+    "AssignmentGroup": "DM IT MSP TOC",
+    "TimeoutSec": 30
+  },
+  "ControlM": {
+    "AapiEndpoint": "https://qctrlm1:8443/automation-api",
+    "AapiToken": "YOUR_CTM_AAPI_TOKEN",
+    "TimeoutSec": 15
+  },
+  "Smtp": {
+    "Enabled": true,
+    "Server": "smtp.yourcompany.com",
+    "Port": 25,
+    "UseSsl": false,
+    "MailFrom": "controlm-alerts@yourcompany.com",
+    "MailTo": "yourteam@yourcompany.com",
+    "Subject": "Control-M ServiceNow Integration Script Failed",
+    "Username": "",
+    "Password": ""
+  },
+  "ReminderFilter": {
+    "RequiredSubstring": "ended not ok"
+  },
+  "StateFile": {
+    "PruneAfterDays": 3
+  }
+}
