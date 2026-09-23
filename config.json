@@ -1,6 +1,6 @@
 {
   "ServiceNow": {
-    "Instance": "https://bciprod.service-now.com",
+    "Instance": "https://YorInstance.service-now.com",
     "User": "YOUR_SNOW_USERNAME",
     "Password": "YOUR_SNOW_PASSWORD",
     "Table": "/api/now/table/incident",
